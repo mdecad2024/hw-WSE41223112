@@ -84,7 +84,7 @@
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ykWRyNDI5wE?si=FhTE6qFyjdYLSKqa" title="YouTube video player" width="560"></iframe></p>
 <p>由於第一部螢幕錄影影片過程出現錯誤，導致影片無法正常撥放，所以放上這個影片</p>
 <script src="/static/jsc3d.js" type="text/javascript"></script>
-<div id="models"><canvas height="300" id="cv1" style="border: 1px solid;" width="400"></canvas> <canvas height="300" id="cv2" style="border: 1px solid;" width="400"></canvas> <!-- 可以添加更多的 canvas --></div>
+<div id="models"><canvas height="180" id="cv1" style="border: 1px solid;" width="280"></canvas> <canvas height="180" id="cv2" style="border: 1px solid;" width="280"></canvas> <canvas height="180" id="cv3" style="border: 1px solid;" width="280"></canvas><canvas height="180" id="cv4" style="border: 1px solid;" width="280"></canvas><!-- 可以添加更多的 canvas --></div>
 <div style="width: 400px; height: 70px; border: 1px solid;">Model Color:<input id="mdlClr" onchange="changeOption('ModelColor',this.value)" style="margin-right: 50px;" type="color" value="#00ff40"/> Back Color1:<input id="bckClr1" onchange="changeOption('BackgroundColor1',this.value)" style="margin-right: 50px;" type="color"/> Back Color2:<input id="bckClr2" onchange="changeOption('BackgroundColor2',this.value)" type="color"/><br/> Render Mode:<select id="render" onchange="changeOption('RenderMode',this.value)">
 <option>Flat</option>
 <option>Point</option>
@@ -144,8 +144,10 @@ function openByUrl(){
 
 function openByGet(){
     var urls = [
-        "https://s104.cycu.org/~41223112/41223112-1.stl"
-        "https://s104.cycu.org/~scrum1/41223199_part99.stl"
+        "https://s104.cycu.org/~41223112/41223112-1.stl",
+        "https://s104.cycu.org/~41223123/41223123_w16_exam1-2.stl",
+        "https://s104.cycu.org/~41223123/41223123_w16_exam1-3.stl",
+        "https://s104.cycu.org/~41223123/41223123_w16_exam1-4.stl",
     ];
     var opt = getOptions();
     urls.forEach((url, index) => {
